@@ -2,197 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Assignment 01</title>
-    <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/carousel/"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0beta1/dist/css/bootstrap.min.css"
+      integrity="sha3840evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="cv-document">
-      <div class="cv-page">
-        <!-- THONG TIN -->
-        <div class="section" id="info" style="position: relative">
-          <h1 class="cv-name">Ngô Quốc Huy</h1>
-          <div class="section-content" style="font-size: 24px">
-            <div style="font-weight: bold; display: inline-block">
-              <div>Ngày sinh</div>
-              <div>Giới tính</div>
-              <div>Địa chỉ</div>
-              <div>Điện thoại</div>
-              <div>Email</div>
-              <div>Website</div>
-            </div>
-            <div style="display: inline-block; margin-left: 30px">
-              <div>23/03/1993</div>
-              <div>Nam</div>
-              <div>Nha Trang, Khánh Hòa</div>
-              <div>(+84)352495851</div>
-              <div>huynqFX22935@funix.edu.vn</div>
-              <div>None</div>
-            </div>
-          </div>
-          <img src="images/default-avatar.png" alt="avatar" />
-        </div>
-
-        <!-- MUC TIEU NGHE NGHIEP -->
-        <div class="section" id="target">
-          <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
-          <div class="section-content">
-            <div>
-              Tham gia CCND với mục tiêu được làm việc trong ngành IT ở Nhật,tôi
-              sẽ cố gắng hoàn thành khóa học một cách sớm nhất.Ứng dụng được
-              những kiến thức đã học vào công việc từ đó phát triển thêm nhiều
-              kỹ năng hơn nửa.
-            </div>
-          </div>
-        </div>
-
-        <!--HOC VAN -->
-        <div class="section" id="education">
-          <h2 class="section-title">Học vấn</h2>
-          <div class="section-content">
-            <ul>
-              <li class="time-line">
-                <div class="content-0">
-                  <div class="content-1">20/4/2023 - Nay<br /><br /></div>
-                  <div class="content-2">
-                    <b>FUNIX</b><br />Chứng chỉ doanh nghiệp
-                  </div>
-                </div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Carousel </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a href="#" aria-curret="page" class="nav-link active">Home</a>
               </li>
-              <li class="time-line">
-                <div class="content-0">
-                  <div class="content-1">2014-2019<br /><br /><br /></div>
-                  <div class="content-2">
-                    <b>ĐH Sư Phạm Kỹ Thuật TPHCM</b><br />Chuyên ngành: Ô tô<br />Loại:
-                    Khá
-                  </div>
-                </div>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled" tabindex="-1">Disabled</a>
               </li>
             </ul>
+            <form class="d-flex">
+              <input
+                type="search"
+                class="form-control me-2"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
+      </nav>
+    </header>
 
-        <!-- KINH NGHIEM -->
-        <div class="section" id="experience">
-          <h2 class="section-title">Kinh nghiệm làm việc</h2>
-          <div class="section-content">
-            <ul>
-              <li class="time-line">
-                <div class="content-0">
-                  <div class="content-1">
-                    3/4/2022 - Nay<br /><br /><br /><br />
-                  </div>
-                  <div class="content-2">
-                    <b>Kajikisangyou</b><br />Kỹ sư sản xuât<br />- Tham gia quá
-                    trình sản xuất linh kiện điện tử.<br />- Kiểm tra, đo đạt
-                    sản phẩm đầu ra.
-                  </div>
-                </div>
-              </li>
-              <li class="time-line">
-                <div class="content-0">
-                  <div class="content-1">9/2019 - 3/2021<br /><br /><br /></div>
-                  <div class="content-2">
-                    <b>Ritavo Q9</b><br />Cố Vấn Dịch Vụ<br />- Tiếp nhận tư vấn
-                    bảo dưỡng sửa chửa...
-                  </div>
-                </div>
-              </li>
-            </ul>
+    <!-- Carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-img1">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>
+              Some representative placeholder content for the first slide of the
+              carousel.
+            </p>
+            <p><a href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
           </div>
         </div>
-
-        <!-- HOAT DONG -->
-        <div class="section" id="activity">
-          <h2 class="section-title">Hoạt động</h2>
-          <div class="section-content">
-            <div class="content-0">
-              <div class="content-1">3/4/2022 - Nay</div>
-              <div class="content-2">Trưởng ban quản lý môi trường.</div>
-            </div>
-            <div class="content-0">
-              <div class="content-1">9/2019 - 3/2021</div>
-              <div class="content-2">Phó phòng môi trường.</div>
-            </div>
+      </div>
+      <div class="carousel item bg-img2">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another exmple healdline</h1>
+            <p>
+              Some representative placeholder content for the second slide of
+              the carousel.
+            </p>
+            <p><a href="#" class="btn btn-lg btn-primary">Learn more</a></p>
           </div>
         </div>
-
-        <!-- KY NANG -->
-        <div class="section" id="skill">
-          <h2 class="section-title">Kỹ năng</h2>
-          <div class="section-content">
-            <div class="content-0">
-              <div class="content-1">HTML</div>
-              <div class="content-2">Vỡ lòng</div>
-            </div>
-            <div class="content-0">
-              <div class="content-1">CSS</div>
-              <div class="content-2">Vỡ lòng</div>
-            </div>
-            <div class="content-0">
-              <div class="content-1">Javacrip</div>
-              <div class="content-2">None</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CHUNG NHAN-GIAI THUONG -->
-        <div class="section" id="certificate">
-          <h2 class="section-title">Chứng nhận - Giải thưởng</h2>
-          <div class="section-content">
-            <div class="content-0">
-              <div class="content-1">2023</div>
-              <div class="content-2">Nhân viên 5S</div>
-            </div>
-            <div class="content-0">
-              <div class="content-1">9/2019 - 3/2021</div>
-              <div class="content-2">Công dân 5 tốt</div>
-            </div>
-          </div>
-        </div>
-        <!-- SO THICH -->
-        <div class="section" id="hobby">
-          <h2 class="section-title">Sở thích</h2>
-          <div class="section-content">
-            <ul>
-              <li>Nghe nhạc</li>
-              <li>Chơi game</li>
-              <li>Xem phim</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- DU AN -->
-        <div class="section" id="project">
-          <h2 class="section-title">Dự án</h2>
-          <div class="section-content">
-            <div class="project">CV Cá Nhân</div>
-            <div>2023</div>
-            <ul>
-              <li><b>Ví trí</b>: Developer</li>
-              <li>
-                <b>Mô tả</b>: Trang Web CV cá nhân online. Gồm các thông tin cá
-                nhân cũng như kỹ năng nghề nghiệp.
-              </li>
-              <li><b>Nhiệm vụ</b>: Phát triển, tối ưu code và xử lý lỗi.</li>
-              <li><b>Công nghệ</b>: HTML, CSS.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- LIEN HE -->
-        <div class="section" id="contact">
-          <h2 class="section-title">Liên hệ</h2>
-          <div class="section-content">
-            <ol>
-              <li><a href="#" style="text-decoration: none">Facbook</a></li>
-              <li><a href="#" style="text-decoration: none">Linkedin</a></li>
-              <li><a href="#" style="text-decoration: none">Zalo</a></li>
-            </ol>
+      </div>
+      <div class="carousel-item bg-img3">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure</h1>
+            <p>
+              Some representative placeholder content for the third slide of
+              this carousel.
+            </p>
+            <p><a href="#" class="btn btn-lg btn-primary">Browse gallery</a></p>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="carousel-indicators">
+      <button
+        class="active"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="0"
+        aria-label="Slide 1"
+        aria-current="true"
+      ></button>
+      <button
+        class=""
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        class=""
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!-- Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
